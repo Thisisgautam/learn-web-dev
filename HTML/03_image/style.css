@@ -1,0 +1,9 @@
+td {
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+th {
+    border: 1px solid rgb(102, 22, 8);
+    background-color: aquamarine;
+}

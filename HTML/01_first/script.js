@@ -1,0 +1,1 @@
+alert("aatma tript ho gayi")

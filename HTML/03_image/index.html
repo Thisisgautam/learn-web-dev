@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- visit web.dev for core web vitals -->
+<!-- image table and lists -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- image tag -->
+    <h1>Image</h1>
+    <!-- In CSS we need px but not in html  -->
+    <img height="240" src="GettyImages-689291632_optimized.jpg" alt="Programmer">
+    <h1>Tables</h1>
+    <!-- table tag -->
+    <table width="360">
+        <!-- table caption  -->
+        <caption>This is a Caption</caption>
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>Programmer</td>
+                <td>Java</td>
+            </tr>
+            <!-- colspan -->
+            <tr>
+                <td>Sam</td>
+                <td colspan="2">Developer Python </td>
+            </tr>
+            <!-- row span  -->
+            <tr>
+                <td>Rohan</td>
+                <td>Programmer</td>
+                <td rowspan="2"> C#</td>
+            </tr>
+            <tr>
+                <td>Shyam</td>
+                <td>Programmer</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- this a footer -->
+        </tfoot>
+    </table>
+    <h1>Lists</h1>
+    <h2>Unordered List</h2>
+    <ul type="circle">
+        <li>Data 1</li>
+        <li>Data 2</li>
+        <li>Data 3</li>
+        <li>Data 4</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol type="i">
+        <li>Data 1</li>
+        <li>Data 2</li>
+        <li>Data 3</li>
+        <li>Data 4</li>
+    </ol>
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt iste illo soluta ut veritatis,
+            libero quaerat non harum quae.</dd>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<!-- required autofocus and patter etc  atributes  -->
+
+<body>
+    <h1>Basic HTML Form</h1>
+    <form action="post">
+        <h2>Basic input tags</h2>
+        <div>
+            <h3>text tag</h3>
+            <label for="username">Enter Your Name</label>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <h3>radio</h3>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <h3>checkbox
+            </h3>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe</label>
+        </div>
+        <div>
+            <h3>textarea</h3>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <h3>select</h3>
+            <label for="fruit">Fav fruit</label>
+            <select name="fruits" id="fruit">
+                <option value="mango">mango</option>
+                <option value="apple">apple</option>
+                <option value="cherry">cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
