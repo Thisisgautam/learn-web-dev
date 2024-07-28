@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .box {
+            border: solid black;
+            background-color: darkgoldenrod;
+            /* width: 1524px; */
+            /* vw referes to viewport width and 80 vw gives 80% of viewport width */
+            width: 80vw;
+            /* using margin:auto; block elements can be centered */
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: solid black;
+            background-color: rgb(11, 173, 184);
+            /* width: 1524px; */
+            width: 80vw;
+            /* using margin:auto; block elements can be centered */
+            margin: 25px auto;
+            /* height: 60vh; */
+            min-height: 60vh;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            /* em values are used for "x" times the inherited value  */
+            /* font-size: 2em; */
+            /* % values are used only when parent element has a set value  */
+            width: 50%;
+            border: solid 2px red;
+        }
+
+        .container div p {
+            /* font-size: 2em; */
+            width: 50%;
+            border: solid 2px red;
+        }
+
+        .foot {
+            border: solid black;
+            /* Vmax for PC is width and Vmin is height while for mobiles vmax is height and vmin width  */
+            width: 80vmax;
+            /* height: 20vmin; */
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a div</div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nobis ab enim laudantium fugiat quas fugit
+            corrupti mollitia. Temporibus, perferendis!
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minima, harum, eos modi illum ratione
+                aliquid
+                possimus vel consectetur non dignissimos magni doloribus atque soluta voluptates nulla vitae quo earum
+                excepturi
+                aperiam ipsam mollitia.
+            </p>
+        </div>
+    </div>
+    <div class="foot">This is a foot</div>
+</body>
+
+</html>
