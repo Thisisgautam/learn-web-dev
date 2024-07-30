@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows & outlines in CSS</title>
+    <style>
+        /* boxshadow and text shadow are demonstrated below  */
+        .box {
+            border: solid blue 3px;
+            padding: 20px;
+            width: 50vw;
+            display: inline-flex;
+            justify-content: center;
+            box-shadow: 11px 12px 10px 6px lightblue;
+        }
+
+        .text {
+            text-shadow: 17px 8px 3px #3949AB;
+            outline: 3px solid #3949AB;
+            border: solid black 2px;
+            outline-offset: 10px;
+            border-radius: 20px;
+            /* outline is outside border it does not takes space can be 
+            moved using offset and it follows border radius */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box</div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet in, nemo culpa, hic inventore
+        reiciendis omnis vel architecto excepturi nobis, earum sapiente perferendis repudiandae dignissimos id repellat
+        quia? Eum assumenda architecto velit quidem dolore officia veritatis molestias a tenetur. Obcaecati molestias
+        dolores, dolore vitae corrupti sequi nisi, nam tempore repellendus sunt explicabo rerum aut tempora sint?
+        Tenetur non magni provident enim delectus iste consequatur molestiae, laborum quam cumque necessitatibus maxime
+        quod odit quidem assumenda distinctio eum sapiente numquam? Voluptatum magni cumque, natus repellat corporis hic
+        suscipit voluptates dolorum itaque adipisci velit ipsa id repudiandae ea similique ex. Nemo aperiam corporis
+        ratione quasi enim reprehenderit labore iusto architecto pariatur consequuntur quaerat neque quisquam quos
+        numquam iste ducimus eum ex impedit repellat rerum alias dicta aut, ipsam inventore. Error omnis doloremque
+        autem beatae commodi impedit dicta hic quaerat itaque? Rem labore culpa temporibus doloremque error voluptate
+        necessitatibus et omnis non! Ex cum est, obcaecati nam debitis consequuntur omnis modi facere quasi nihil nulla
+        vero sit quaerat dignissimos quam rerum voluptatum quidem nostrum repudiandae animi excepturi inventore velit.
+        Quod, temporibus aut. Nulla provident enim, ab earum quas aut dolore, ullam ducimus at, consequatur obcaecati
+        autem perspiciatis dolor pariatur praesentium? Qui, velit quo. </p>
+</body>
+
+</html>
