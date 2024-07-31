@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* creating global variables
+        variables can be color,valuse etc */
+        :root {
+            --color: rgb(34, 25, 203);
+            --seccolor: rgb(127, 123, 197);
+            --pad: 40px;
+            --defop: 0.5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            /* background-color: red; */
+
+            background-color: var(--color);
+            padding: var(--pad);
+
+        }
+
+        .container {
+            /* background-color: rgb(216, 141, 141); */
+            background-color: var(--seccolor);
+            padding: var(--pad);
+            color: var(--color);
+        }
+
+        .container:hover {
+            opacity: var(--defop);
+        }
+
+        .nav ul {
+
+            display: flex;
+        }
+
+        .nav ul li {
+
+            /* background-color: var(--color); */
+            list-style: none;
+            padding: 20px;
+            /* margin: var(--pad); */
+            border: 2px solid white;
+        }
+
+        .nav ul li:hover {
+            /* by overwriting we can cretaed a local variable */
+            --color: rgb(222, 48, 117);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa quibusdam ipsam, sunt
+        corporis reprehenderit possimus, cumque nihil ratione quidem velit nemo id praesentium dolor porro corrupti
+        illum obcaecati animi vel voluptate. Adipisci similique quaerat perspiciatis nostrum tempore voluptatibus totam
+        commodi perferendis explicabo. Maxime dicta recusandae enim! Commodi, quaerat dolore!</div>
+</body>
+
+</html>
