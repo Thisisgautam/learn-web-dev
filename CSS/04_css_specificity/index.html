@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade algorithm</title>
+    <style>
+        /* specificity of this selector is 1 */
+        h1 {
+            color: chartreuse;
+        }
+
+        /* specificity of this selector is 10*/
+        .cred {
+            color: red;
+            /* color: red !important; */
+        }
+
+        /* specificity of this selector is 10 */
+        .cyellow {
+            color: rgb(237, 237, 6);
+
+        }
+
+        /* specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* specificity of this selector is 10 */
+        [data=a] {
+            color: cadetblue;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+
+            text-decoration-color: fuchsia;
+        }
+
+        /* specificity of this selector is 1+10+10+10+10 =41
+        a.harryclass.red-class[herf]:hover{
+        color : red;}
+        */
+    </style>
+</head>
+<!-- In this tutorial we will study about Cascade algorithm in CSS
+4 stages
+1. position : when same specificity of css the css applied at the last is favorable
+2. specificity : inline-css>id>class/attribute>element>universal
+3. origin 
+4.Importance
+ -->
+
+<body>
+    <h1 class="cred cyellow cpurple" data="a">CSS Specificity</h1>
+
+</body>
+
+</html>

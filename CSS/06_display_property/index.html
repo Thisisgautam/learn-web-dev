@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        .box {
+            border: solid blue 2px;
+            /* display: inline; makes the block element inline but prevents margin(top) and width */
+            display: inline-block;
+            padding: 20px;
+            margin: 25px;
+            width: 200px;
+        }
+
+        .box1 {
+
+            /* display: none; hides the element and also its space  */
+            /* visibility: hidden; hides the element but space is there  */
+            /* flex and inline-flex is generally used to move content  */
+            display: inline-flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">This is a div</div>
+    <div class="box">This is another div</div>
+    <span>I am an</span>
+    <span>inline span</span>
+</body>
+
+</html>
