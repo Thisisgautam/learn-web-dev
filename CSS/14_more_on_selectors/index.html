@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+
+        .box {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* this will aply if .box is first child of its parent  */
+        .box:first-child {
+            color: red;
+        }
+
+        /* This property will apply to first line of this element  */
+        .box:nth-child(2)::first-line {
+            color: aqua;
+        }
+
+        /* before/after is used to insert content dynamically  */
+        .container::before {
+            content: "This is before";
+            color: blueviolet;
+            padding: 10px;
+        }
+
+        /* .container::after {
+            content: "This is after";
+        } */
+
+        /* this property will apply when there is selection  */
+        .box::selection {
+            background-color: #dd3535;
+        }
+
+        /* this property will apply to first letter of the element */
+        .box::first-letter {
+            font-size: 50px;
+        }
+
+        /* to target placeholder of input element  */
+        input::placeholder {
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is first box</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt, veritatis provident
+            et fugit atque consectetur porro suscipit assumenda totam id eius eaque excepturi magnam nulla incidunt sint
+            animi ullam dignissimos dolores? Atque eaque explicabo dolorem tempore sed veritatis itaque culpa rem, ullam
+            expedita nostrum eveniet odio aliquam impedit quisquam.</div>
+        <div class="box">This is third box</div>
+        <input type="text" name="" id="" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>

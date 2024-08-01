@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this is a normal layout exercise not a reponsive webpage -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            font-style: normal;
+        }
+
+        .nav {
+            background-color: rgb(211, 141, 214);
+            position: sticky;
+            top: 0px;
+            color: white;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: 25px;
+        }
+
+        .box1 {
+            background-color: rgb(191, 193, 114);
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: black;
+            height: 40vw;
+            width: 40vw;
+            margin: 10px;
+        }
+
+        .content:first-child {
+            background-color: white;
+        }
+
+        .box2 {
+            background-color: rgb(216, 86, 118);
+            display: flex;
+            justify-content: center;
+        }
+
+        .rect {
+            margin: 100px;
+            padding: 50px;
+            font-size: 100px;
+            border-radius: 10px;
+            background-color: rgb(134, 125, 190);
+            height: fit-content;
+        }
+
+        .foot {
+            background-color: rgb(211, 141, 214);
+            height: 6vw;
+        }
+
+        img {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <div class="box1">
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+    <div class="box2">
+        <div class="rect">
+            Welcome to this Sigma Web development Express.....
+        </div>
+    </div>
+    <div class="foot"></div>
+    <div class="logo">
+        <img src="https://th.bing.com/th/id/R.fd721f81cf12ebf7b3234c2c665b584c?rik=VX6HpLVptUIOMQ&riu=http%3a%2f%2fwww.freepnglogos.com%2fuploads%2fpokemon-symbol-logo-png-31.png&ehk=aSt1644QEFHVKT7thXmBsOPsr2lNpCODH4hF6OqUS5M%3d&risl=&pid=ImgRaw&r=0"
+            alt="" height="80vw">
+    </div>
+</body>
+
+</html>
