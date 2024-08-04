@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            height: 60vh;
+            width: 60vw;
+            background-color: #6ac3d3;
+        }
+
+        .box {
+            height: 20px;
+            width: 40px;
+            /* background-color: #cf6ecc; */
+            /* Applying Animation  */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: animation1;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            animation-direction: forwards;
+            animation-play-state: running;
+            animation-fill-mode: forwards; */
+            animation:
+                animation1 3s ease-in-out 2,
+                identifier 3s 2;
+        }
+
+        /* to create an animation */
+        @keyframes animation1 {
+            from {
+                background-color: #cf6ecc;
+
+
+            }
+
+            to {
+                background-color: #67c167;
+                /* transform: translate(30vw, 30vw); */
+                /* transform: rotate(360deg); */
+            }
+        }
+
+        @keyframes identifier {
+            0% {
+                transform: rotate(300deg);
+            }
+
+            25% {
+                transform: translateX(200px) rotate(200deg);
+            }
+
+            75% {
+                transform: translateX(300px);
+            }
+
+            100% {
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

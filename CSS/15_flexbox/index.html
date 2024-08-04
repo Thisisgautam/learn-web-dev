@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything about Flexbox  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* flexbox properties are used in the container  */
+        .container {
+            height: 60vh;
+            border: 2px solid black;
+            display: flex;
+            /*to align items horizontally/along main axis*/
+            justify-content: center;
+            /*to align items vertically/along cross axis*/
+            /* align-items: center; */
+            /* when there are multiple lines align-content: ; is used  */
+            align-content: center;
+            /* by default flex-direction is left to right  */
+            /* flex-direction: column; */
+            /* flex-wrap: ;is used to deal with overflow  */
+            /* flex-wrap: wrap; */
+            /* flex-flow: ; is used to assing <flex-direction> <flex-wrap>  */
+            flex-flow: row wrap;
+            /* gap: ; is used to provide gap between items  */
+            gap: 50px 30px;
+        }
+
+        /* some properties can be applied to individual items  */
+        .items {
+            background-color: #3e8cd5;
+            /* margin: 30px; */
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+
+        }
+
+        .item1 {
+            /* relative width can be set using flex-grow: ; */
+            flex-grow: 2;
+            /* speed of shrink if necessary can be set using flex-shrink: ;  */
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items">3</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+
+</html>

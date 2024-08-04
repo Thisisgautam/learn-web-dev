@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce-2</title>
+    <style>
+        .cont {
+            background-color: #0e9709;
+            width: 80vw;
+            height: 60vh;
+            position: relative;
+        }
+
+        .ball {
+            background-color: red;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 6vh;
+            position: absolute;
+            bottom: 0px;
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.33333, 0.66667, 0.66667, 1);
+            transition-delay: 1s; */
+            /* animation: y-rise 1s cubic-bezier(0.33333, 0.66667, 0.66667, 1) infinite; */
+            animation: y-rise 0.5s cubic-bezier(0.33333, 0.66667, 0.66667, 1) infinite alternate, x 2s linear infinite;
+        }
+
+        @keyframes x {
+            to {
+                transform: translate(60vw);
+            }
+
+        }
+
+        @keyframes y-rise {
+            from {
+                bottom: 0px;
+            }
+
+            to {
+                bottom: 30vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="cont">
+    <div class="ball "></div>
+</div>
+
+</html>

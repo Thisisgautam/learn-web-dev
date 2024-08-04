@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce animation in css</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 60vh;
+            background-color: #0e9709;
+            position: relative;
+        }
+
+        .ball {
+            background-color: red;
+            height: 6vh;
+            width: 6vh;
+            border-radius: 6vw;
+            position: absolute;
+            bottom: 0px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animation-y 0.5s cubic-bezier(0.33333, 0.66667, 0.66667, 1) infinite alternate-reverse,
+                animation-x 2s linear infinite normal;
+            /* ,
+                animation-x 1s linear infinite normal*/
+            /* animation-fill-mode: none; */
+            /* animation-direction: alternate; */
+            /* animation: animation-x 1s linear infinite; */
+            /* animation: animation-x 2s linear infinite normal; */
+        }
+
+        @keyframes animation-y {
+            from {}
+
+            to {
+                transform: translateY(-30vh);
+            }
+
+        }
+
+        @keyframes animation-x {
+            /* 50% {
+                transform: translateX(30vw);
+            } */
+
+            100% {
+                transform: translateX(60vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

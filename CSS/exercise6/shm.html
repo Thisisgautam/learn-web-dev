@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #0e9709;
+            width: 70vw;
+            height: 80vh;
+            position: relative;
+
+        }
+
+        .box {
+            background-color: red;
+            height: 6vh;
+            width: 6vh;
+            border-radius: 6vw;
+            position: absolute;
+            top: 30vh;
+            left: 30vw;
+            animation: y 1s cubic-bezier(0.33333, 0.66667, 0.66667, 1) infinite alternate, x 2s linear infinite alternate;
+        }
+
+        @keyframes x {
+            from {
+                left: 3vw;
+            }
+
+            to {
+                left: 60vw
+            }
+        }
+
+        @keyframes y {
+            from {
+                top: 30vh;
+            }
+
+            to {
+                top: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
