@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Properties</title>
+    <style>
+        .container {
+
+            border: solid black 2px;
+            display: flex;
+            /* gap: 100px; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* align-items: center; */
+        }
+
+        .box {
+            height: 50px;
+            width: 100px;
+            margin: 20px;
+
+            background-color: rgb(165, 132, 132);
+        }
+
+        .rotatex {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rotatex:hover {
+            transform: rotateX(60deg);
+        }
+
+        .rotateY {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rotateY:hover {
+            transform: rotateY(60deg);
+        }
+
+        .rotate {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rotate:hover {
+            /* transform: rotateZ(60deg); */
+            transform: rotate(300deg);
+            transition: ease 1s;
+        }
+
+        .scaleX {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scaleX:hover {
+            /* transform: rotateZ(60deg); */
+            transform: scaleX(2);
+        }
+
+        .scaleY {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scaleY:hover {
+            /* transform: rotateZ(60deg); */
+            transform: scaleY(2);
+        }
+
+        .scale {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scale:hover {
+            /* transform: rotateZ(60deg); */
+            transform: scale(2);
+        }
+
+        .skewY {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skewY:hover {
+            /* transform: rotateZ(60deg); */
+            transform: skewY(20deg);
+        }
+
+        .skew {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skew:hover {
+            /* transform: rotateZ(60deg); */
+            transform: skew(20deg);
+        }
+
+        .Translate {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Translate:hover {
+            /* transform: rotateZ(60deg); */
+            /* transform: translate(100px); */
+            transform: Translate(20%);
+        }
+
+        .TranslateY {
+            height: 50px;
+            width: 100px;
+            /* margin: 20px; */
+            background-color: rgb(28, 28, 195);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .TranslateY:hover {
+            /* transform: rotateZ(60deg); */
+            /* transform: translate(100px); */
+            transform: Translatey(20%);
+            transition: all ease-in-out 1s;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Transform </h1>
+    <div class="container">
+        <div class="box">
+            <div class="rotatex"> Rotatex</div>
+        </div>
+        <div class="box">
+            <div class="rotateY"> RotateY</div>
+        </div>
+        <div class="box">
+            <div class="rotate"> Rotate/z</div>
+        </div>
+        <div class="box">
+            <div class="scaleX"> scaleX</div>
+        </div>
+        <div class="box">
+            <div class="scaleY"> scaleY</div>
+        </div>
+        <div class="box">
+            <div class="scale"> scale</div>
+        </div>
+        <div class="box">
+            <div class="skew"> skew/x</div>
+        </div>
+        <div class="box">
+            <div class="skewY"> skewY</div>
+        </div>
+        <div class="box">
+            <div class="Translate"> Translate/x</div>
+        </div>
+        <div class="box">
+            <div class="TranslateY"> TranslateY</div>
+        </div>
+
+</html>

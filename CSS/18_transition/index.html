@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container {
+            background-color: rgb(61, 207, 13);
+            height: 60vh;
+            width: 60vw;
+        }
+
+        .box {
+            font-size: 12px;
+            text-align: center;
+            background-color: #dd63d2;
+            /* border: 2px solid black; */
+            height: 2vw;
+            width: 7vw;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s; */
+            transition: all 2s ease 0.5s;
+        }
+
+        .box:hover {
+            transform: translate(30vw, 40vh) rotate(720deg) scale(2);
+
+            background-color: #fff;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">uwu..</div>
+    </div>
+</body>
+
+</html>
